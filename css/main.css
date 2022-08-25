@@ -17,6 +17,7 @@ ul{
 }
 .container {
   padding: 0 15px;
+  margin: auto;
 }
 @media (min-width: 576px) {
   .container {
