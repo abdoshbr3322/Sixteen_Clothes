@@ -19,27 +19,27 @@ ul{
   padding: 0 15px;
 }
 @media (min-width: 576px) {
-  .contaienr {
+  .container {
     width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .contaienr {
+  .container {
     width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .contaienr {
+  .container {
     width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .contaienr {
+  .container {
     width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .contaienr {
+  .container {
     width: 1320px;
   }
 }
