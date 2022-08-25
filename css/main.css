@@ -2,7 +2,7 @@
   --main-color: #f33f3f;
   --secondary-color: #1a6692;
   --text-color: #4a4a4a;
-  
+
 }
 * {
   margin: 0;
@@ -14,4 +14,32 @@ img ,video {
 }
 ul{
   list-style: none;
+}
+.container {
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .contaienr {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .contaienr {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .contaienr {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .contaienr {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .contaienr {
+    width: 1320px;
+  }
 }
