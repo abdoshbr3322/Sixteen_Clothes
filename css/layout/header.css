@@ -1,3 +1,17 @@
 header {
   background-color: #212529;
 }
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .logo {
+  margin-right: auto;
+}
+header .navbar .nav-menu {
+  display: flex;
+}
+header .navbar .nav-menu a {
+  display: inline-block;
+  padding: 15px 20px;
+}
