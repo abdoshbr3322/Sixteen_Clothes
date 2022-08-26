@@ -8,6 +8,11 @@ header .navbar .logo {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+@media (max-width: 575px) {
+  header .navbar .logo {
+    font-size: 14px;
+  }
+}
 @media (max-width: 991px) {
   header .navbar .logo {
     padding: 15px 0;
@@ -25,23 +30,6 @@ header .navbar .nav-menu {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-@media (max-width: 991px) {
-  header .navbar .nav-menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  header .navbar .nav-menu li , header .navbar .nav-menu li a {
-    width: 100%;
-    transition: 0.3s;
-  }
-  header .navbar .nav-menu li a:hover {
-    color: var(--main-color);
-  }
-  header .navbar .nav-menu li a::after {
-    display: none
-  }
 }
 header .navbar .nav-menu a {
   display: inline-block;
@@ -75,4 +63,36 @@ header .navbar .nav-toggler {
   font-size: 20px;
   color: var(--main-color);
   cursor: pointer;
+  display: none;
+}
+@media (max-width: 575px) {
+  header .navbar .nav-toggler {
+    font-size: 17px;
+    padding: 4px 15px;
+  }
+}
+@media (max-width: 991px) {
+  header .navbar .nav-menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
+    align-items: flex-start;
+  }
+  header .navbar .nav-menu.active {
+    height: 266px;
+  }
+  header .navbar .nav-menu li , header .navbar .nav-menu li a {
+    width: 100%;
+    transition: 0.3s;
+  }
+  header .navbar .nav-menu li a:hover {
+    color: var(--main-color);
+  }
+  header .navbar .nav-menu li a::after {
+    display: none
+  }
+  header .navbar .nav-toggler {
+    display: block;
+  }
 }
