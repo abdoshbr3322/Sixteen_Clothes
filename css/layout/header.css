@@ -34,6 +34,13 @@ header .navbar .nav-menu {
   }
   header .navbar .nav-menu li , header .navbar .nav-menu li a {
     width: 100%;
+    transition: 0.3s;
+  }
+  header .navbar .nav-menu li a:hover {
+    color: var(--main-color);
+  }
+  header .navbar .nav-menu li a::after {
+    display: none
   }
 }
 header .navbar .nav-menu a {
@@ -61,4 +68,11 @@ header .navbar .nav-menu a::after {
 header .navbar .nav-menu a:hover::after {
   background-color: var(--main-color);
   top: 100%;
+}
+header .navbar .nav-toggler {
+  background-color: #fff;
+  padding: 5px 17px;
+  font-size: 20px;
+  color: var(--main-color);
+  cursor: pointer;
 }
