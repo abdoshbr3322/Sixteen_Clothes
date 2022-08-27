@@ -1,4 +1,4 @@
-// create navbar menu toggler
+// Abdullah Elshebrawy: create navbar menu toggler
 let menuToggler = document.querySelector(".nav-toggler");  // select the menu toggler button
 
 menuToggler.addEventListener("click" ,toggleMenu); // add click event on the toggler button
@@ -9,20 +9,32 @@ function toggleMenu (e) { // toggle menu on click
   menu.classList.toggle("active");
 }
 
-//button scroll to top
+// Abdullah Mohamed: button scroll to top
 const btnscrolltoTop = document.querySelector("#btnscrolltoTop");
 
-btnscrolltoTop.addEventListener("click" ,function (){
+btnscrolltoTop.addEventListener("click" ,function () {
   window.scrollTo({
-    
     top:0,
     behavior:"smooth",
-    });
-
   });
+});
 
+// Abdullah Elshebrawy: show scrolltoTop button on scroll
 
+checkScrollPosition(); // chck scroll position when someone open the page
+window.addEventListener("scroll" ,checkScrollPosition) // chck scroll position when someone scroll by the page
 
+function checkScrollPosition() {
+  if (window.scrollY >= 450) { // check if the window is scrolled by 450px or more
+    showScrollToTopBtn(); // if true show the btn
+  } else {
+    hideScrollToTopBtn(); // if false hide the btn
+  }
+}
 
-
- 
+function showScrollToTopBtn() {
+  btnscrolltoTop.classList.add("active");
+}
+function hideScrollToTopBtn() {
+  btnscrolltoTop.classList.remove("active");
+}
