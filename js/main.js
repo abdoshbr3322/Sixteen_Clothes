@@ -8,3 +8,27 @@ function toggleMenu (e) { // toggle menu on click
   let menu = document.querySelector(toggler.dataset.menu);
   menu.classList.toggle("active");
 }
+
+//button scroll to top
+  
+const btnscrolltoTop = document.querySelector("#btnscrolltoTop");
+
+
+
+btnscrolltoTop.addEventListener("click" ,function (){
+  window.scrollTo({
+    
+    top:0,
+    left:0,
+    behavior:"smooth",
+    
+
+  });
+
+});
+
+
+
+
+
+ 
