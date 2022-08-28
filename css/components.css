@@ -5,6 +5,9 @@
   border-radius: 5px;
   padding: 10px 20px;
   transition: 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .main-btn:hover {
   background-color: #121212;
