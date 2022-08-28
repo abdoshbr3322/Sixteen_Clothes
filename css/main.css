@@ -74,3 +74,63 @@ ul{
 #btnscrolltoTop.active {
   bottom: 15px;
 }
+/* Abdullah Elshebrawy: create banner section */
+.banner {
+  position: relative;
+}
+.banner .content .bg-info {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .banner .content .bg-info {
+    height: 600px;
+  }
+}
+.banner .content .bg-info .info {
+  text-align: center;
+  padding: 0 13px;
+}
+.banner .content .bg-info .info .heading {
+  text-transform: uppercase;
+}
+.banner .content .bg-info .info .heading h4 {
+  font-size: 22px;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+.banner .content .bg-info .info .heading h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 5px;
+}
+@media (min-width: 768px) {
+  .banner .content .bg-info .info .heading h2 {
+    font-size: 62px;
+  }
+}
+.banner .bullets {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+.banner .bullets .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(256 ,556 ,556 ,24%);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.banner .bullets .owl-dot.active {
+  background-color: #fff;
+}
+.banner .bullets .owl-dot:not(:first-child) {
+  margin-left: 8px;
+}
