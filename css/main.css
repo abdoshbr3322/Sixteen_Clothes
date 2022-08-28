@@ -83,6 +83,8 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .banner .content .bg-info {
