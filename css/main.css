@@ -3,6 +3,8 @@
   --main-color: #f33f3f;
   --secondary-color: #1a6692;
   --text-color: #4a4a4a;
+  --main-transition: 0.3s;
+  --slow-transition: 0.6s;
 }
 * {
   margin: 0;
