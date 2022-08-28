@@ -19,23 +19,29 @@ btnscrolltoTop.addEventListener("click" ,function () {
   });
 });
 
-// Abdullah Elshebrawy: show scrolltoTop button on scroll
+// Abdullah Elshebrawy: show scrolltoTop button and header on scroll
+
+let header = document.querySelector("header");
 
 checkScrollPosition(); // chck scroll position when someone open the page
 window.addEventListener("scroll" ,checkScrollPosition) // chck scroll position when someone scroll by the page
 
 function checkScrollPosition() {
   if (window.scrollY >= 450) { // check if the window is scrolled by 450px or more
-    showScrollToTopBtn(); // if true show the btn
+    // if true show the btn and the header
+    showContent();
   } else {
-    hideScrollToTopBtn(); // if false hide the btn
+    // if false hide the btn and the header
+    hideContent();
   }
 }
 
-function showScrollToTopBtn() {
+function showContent() {
+  header.classList.add("fixed");
   btnscrolltoTop.classList.add("active");
 }
-function hideScrollToTopBtn() {
+function hideContent() {
+  header.classList.remove("fixed");
   btnscrolltoTop.classList.remove("active");
 }
 
