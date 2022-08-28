@@ -3,7 +3,6 @@ header {
 }
 header .navbar .logo {
   margin-right: auto;
-  font-size: 1rem;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -84,7 +83,7 @@ header .navbar .nav-toggler {
   }
   header .navbar .nav-menu li , header .navbar .nav-menu li a {
     width: 100%;
-    transition: 0.3s;
+    transition: var(--main-transition);
   }
   header .navbar .nav-menu li a:hover {
     color: var(--main-color);
