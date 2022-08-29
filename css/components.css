@@ -1,5 +1,6 @@
 /* Abdullah Elshebrawy: Main Button */
 .main-btn {
+  display: inline-block;
   font-size: 14px;
   color: #fff;
   background-color: var(--main-color);
@@ -31,7 +32,6 @@
   font-weight: 600;
   color: var(--main-color);
   text-transform: uppercase;
-  text-decoration: none;
 }
 .primary-heading a:hover i {
   animation: move-arrow 0.4s backwards ease-in infinite;
