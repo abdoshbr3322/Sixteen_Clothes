@@ -3,6 +3,8 @@
   --main-color: #f33f3f;
   --secondary-color: #1a6692;
   --text-color: #4a4a4a;
+  --blue-color: #007bff;
+  --blue-color-alt: #0056b3;
   --main-transition: 0.3s;
   --slow-transition: 0.6s;
 }
@@ -19,6 +21,9 @@ img ,video {
 }
 ul{
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 .container {
   padding: 0 15px;
@@ -135,4 +140,77 @@ ul{
 }
 .banner .bullets .owl-dot:not(:first-child) {
   margin-left: 8px;
+}
+/* Abdullah Elshebrawy: Create About section */
+.about {
+  padding: 60px 0;
+}
+.about .primary-heading {
+  margin-bottom: 60px;
+}
+.about .content {
+  display: flex;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .about .content {
+    flex-direction: column;
+  }
+}
+.about .content .info {
+  width: 55%;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .about .content .info {
+    margin-right: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
+.about .content .info .title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+.about .content .info .text {
+  margin-bottom: 15px;
+}
+.about .content .info .text,
+.about .content .info .about-us li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.7;
+  transition: var(--main-transition);
+}
+.about .content .info .text a {
+  color: var(--blue-color);
+}
+.about .content .info .text a:hover {
+  color: var(--blue-color-alt);
+}
+.about .content .info .about-us {
+  margin-bottom: 20px;
+}
+.about .content .info .about-us li {
+  position: relative;
+  padding-left: 18px;
+}
+.about .content .info .about-us li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.about .content .info .about-us li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: currentColor;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about .content .info .about-us li a:hover {
+  color: var(--main-color);
 }
