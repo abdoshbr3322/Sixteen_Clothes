@@ -1,3 +1,4 @@
+/* Abdullah Elshebrawy: Main Button */
 .main-btn {
   font-size: 14px;
   color: #fff;
@@ -11,4 +12,35 @@
 }
 .main-btn:hover {
   background-color: #121212;
+}
+/* Abdullah Elshebrawy: Main Heading */
+.primary-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.primary-heading h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+.primary-heading a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.primary-heading a:hover i {
+  animation: move-arrow 0.4s backwards ease-in infinite;
+}
+@keyframes move-arrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(8px);
+  }
 }
