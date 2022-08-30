@@ -70,6 +70,7 @@ ul.social-links a:hover {
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 20px;
 }
 @media (min-width: 768px) {
   .grid-3 {
