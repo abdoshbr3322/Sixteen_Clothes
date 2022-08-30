@@ -23,3 +23,62 @@
   border-bottom: 1px solid #eee;
   margin-bottom: 15px;
 }
+/* Abdullah Elshebrawy: our team section */
+.our-team {
+  padding: 60px 0;
+}
+.our-team .primary-heading {
+  margin-bottom: 55px;
+}
+.our-team .member {
+  border: 1px solid #eee;
+  text-align: center;
+}
+.our-team .member .image {
+  position: relative;
+}
+.our-team .member .image img {
+  object-fit: cover;
+  width: 100%;
+}
+.our-team .member .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(243,63,63,0.9);
+  opacity: 0;
+  transition: .5s;
+}
+.our-team .member:hover .image .overlay {
+  opacity: 1;
+}
+.our-team .member .social-links a:hover {
+  background-color: #eee;
+  color: var(--main-color);
+}
+.our-team .member .info {
+  padding: 20px 15px;
+}
+.our-team .member .info .name {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+.our-team .member .info .job-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.our-team .member .info .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.4;
+}
