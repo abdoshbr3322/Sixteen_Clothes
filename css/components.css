@@ -66,3 +66,18 @@ ul.social-links a:hover {
   background-color: var(--main-color);
   color: #fff;
 }
+/* Abdullah Elshebrawy: create grid component */
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2 ,1fr)
+  }
+}
+@media (min-width: 992px) {
+  .grid-3 {
+    grid-template-columns: repeat(3 ,1fr)
+  }
+}
