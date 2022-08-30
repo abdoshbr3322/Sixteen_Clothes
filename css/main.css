@@ -22,10 +22,15 @@ ul{
   padding: 0 15px;
   margin: auto;
 }
+
+   
 @media (min-width: 576px) {
   .container {
     width: 540px;
   }
+
+   
+
 }
 @media (min-width: 768px) {
   .container {
@@ -48,7 +53,7 @@ ul{
   }
 }
 
-
+ 
 #btnscrolltoTop{
   position: fixed;
   right: 10px;
@@ -69,5 +74,129 @@ ul{
   background-color: white;
   border: 2px solid var(--main-color);
   cursor: pointer;
+}
+
+
+
+
+.product{
+  position: relative;
+  text-align: left;
+  margin-bottom: 60px;
+  
+  justify-content: space-between;
+  display: flex;
+  
+   
+
+  
+}
+
+.product h2{
+  margin-left:100px ;
+  margin-top: 120px;
+  font-size: 28px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+
+}
+
+.product h2 span{
+  color: var(--text-color);
+  font-weight: 400;
+   
+}
+
+.product a{
+  padding-left: 700px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--main-color);
+ 
+}
+
+
+
+
+.box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  
+}
+
+
+.card{
+  height: 350px;
+  width: 400px;
+  display: block;
+  border: 1px solid black;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+   
+   
+   
+}
+
+.cardText a{
+  font-size: 17px;
+  font-weight: 400;
+  color: #1a6692;
+  padding-left: 25px;
+  text-decoration: none;
+
+}
+
+.cardText h6{
+  font-size: 18px;
+  float: right;
+  font-weight: 500;
+  padding-right: 25px;
+}
+
+.cardText p{
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.stars{
+  list-style: none;
+  display: flex;
+  padding-top: 14px;
+  padding-left: 30px;
+  letter-spacing: 7px;
+  font-size: 13px;
+   
+  
+}
+.cardText span{
+     
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+.fa{
+  color: var(--main-color);
+   
+}
+
+.cardText h4{
+   position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 500;
+
 }
 
