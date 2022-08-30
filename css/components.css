@@ -12,7 +12,7 @@
   transition: var(--main-transition);
 }
 .main-btn:hover {
-  background-color: #121212;
+  background-color: var(--black-color);
 }
 /* Abdullah Elshebrawy: Main Heading */
 .primary-heading {
@@ -43,4 +43,26 @@
   100% {
     transform: translateX(8px);
   }
+}
+/* Abdullah Elshebrawy: create socila-link */
+ul.social-links {
+  display: flex;
+}
+ul.social-links > li + li {
+  margin-left: 10px;
+}
+ul.social-links a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  color: var(--black-color);
+  transition: var(--main-transition);
+}
+ul.social-links a:hover {
+  background-color: var(--main-color);
+  color: #fff;
 }

@@ -18,7 +18,7 @@ header .navbar .logo {
   letter-spacing: 1px;
 }
 header.fixed .navbar .logo {
-  color: #121212;
+  color: var(--black-color);
 }
 @media (max-width: 575px) {
   header .navbar .logo {
@@ -59,7 +59,7 @@ header .navbar .nav-menu a {
   position: relative;
 }
 header.fixed .navbar .nav-menu a {
-  color: #121212;
+  color: var(--black-color);
 }
 header .navbar .nav-menu .nav-item:not(:last-child) a {
   margin-right: 30px;

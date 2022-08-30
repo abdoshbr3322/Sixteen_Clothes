@@ -1,0 +1,25 @@
+/* Reset some changes in banner section in about page */
+.banner .content .bg-info {
+  height: unset !important;
+  padding: 100px 0;
+}
+
+/* Reset some changes in about section in about page */
+.about .content .image {
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .about .content .image {
+    margin-right: 25px;
+  }
+}
+.about .content .info {
+  margin-right: 0;
+  margin-bottom: 0 !important;
+  width: 60%;
+}
+.about .content .info p.text:nth-of-type(2) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
