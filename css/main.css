@@ -208,3 +208,26 @@ a {
 .about .content .info .about-us li a:hover {
   color: var(--main-color);
 }
+/* Abdullah Elshebrawy: Customers section */
+.customers {
+  padding: 80px 0;
+}
+.customers .primary-heading {
+  margin-bottom: 45px;
+}
+.customers .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.customers .content .customer {
+  padding: 10px;
+}
+.customers .content .customer img {
+  transition: var(--main-transition);
+}
+.customers .content .customer:hover img {
+  filter: brightness(1.014);
+  cursor: pointer;
+}
