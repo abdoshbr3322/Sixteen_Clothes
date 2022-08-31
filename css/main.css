@@ -170,9 +170,6 @@ a {
   }
 }
 .about .content .info .title {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--secondary-color);
   margin-bottom: 15px;
 }
 .about .content .info .text {
@@ -180,10 +177,6 @@ a {
 }
 .about .content .info .text,
 .about .content .info .about-us li a {
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--text-color);
-  line-height: 1.7;
   transition: var(--main-transition);
 }
 .about .content .info .text a {

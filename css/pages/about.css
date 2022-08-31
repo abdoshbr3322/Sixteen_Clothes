@@ -65,9 +65,6 @@
   padding: 20px 15px;
 }
 .our-team .member .info .name {
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 .our-team .member .info .job-title {
@@ -77,8 +74,41 @@
   margin-bottom: 20px;
 }
 .our-team .member .info .text {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--text-color);
   line-height: 1.4;
+}
+/* Abdullah Elshebrawy: Services section */
+.services {
+  padding: 100px 0;
+  background-image: url("../../imgs/services-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.services .serv {
+  background-color: #fff;
+  text-align: center;
+}
+.services .serv-head {
+  background-color: #eee;
+}
+.services .serv-head ,.services .serv-body {
+  padding: 40px 15px;
+}
+.services .serv-head, .services .serv-head .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.services .serv-head .icon {
+  background-color: var(--main-color);
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 28px;
+}
+.services .serv-body .title {
+  margin-bottom: 20px;
+}
+.services .serv-body p {
+  margin-bottom: 25px;
 }
