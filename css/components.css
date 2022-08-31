@@ -91,6 +91,6 @@ ul.social-links a:hover {
 .main-text {
   font-size: 14px;
   font-weight: 400;
-  color: #4a4a4a;
-  line-height: 1.7;
+  color: var(--text-color);
+  line-height: 1.8;
 }
