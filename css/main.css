@@ -80,6 +80,156 @@ a {
 #btnscrolltoTop.active {
   bottom: 15px;
 }
+/*Abdalla Mohammed : products-secthion*/
+
+
+.product{
+  position: relative;
+  text-align: left;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  
+   
+
+  
+}
+
+.product h2{
+  margin-left:100px ;
+  margin-top: 120px;
+  font-size: 28px;
+  margin-bottom: 10px;
+  
+
+}
+
+.product h2 span{
+  color: var(--text-color);
+  font-weight: 400;
+   
+}
+
+.product a {
+  position: absolute;
+  right: 100px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--main-color);
+ 
+}
+ 
+
+ 
+
+.box{
+  display: grid;
+  grid: gap 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  align-items: flex-start;
+  width: 100%;
+  height: auto ;
+   
+  
+  
+}
+
+
+.card{
+  height: 350px;
+  width: 300px;
+  display: block;
+  border: 1px solid #eee;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 80px;
+   
+   
+   
+}
+
+.cardText a{
+  font-size: 17px;
+  font-weight: 400;
+  color: #1a6692;
+  padding-left: 25px;
+  text-decoration: none;
+
+}
+
+.cardText h6{
+  font-size: 18px;
+  float: right;
+  font-weight: 500;
+  padding-right: 25px;
+}
+
+.cardText p{
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 24px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.stars{
+  list-style: none;
+  display: flex;
+  padding-top: 14px;
+  padding-left: 10px;
+  letter-spacing: 7px;
+  font-size: 13px;
+  position: absolute;
+  color: var(--main-color);
+  left: 10px;
+  bottom: 30px;
+   
+  
+}
+.cardText span{
+     
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+ 
+
+.cardText h4{
+   position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    color: var(--main-color);
+    font-weight: 500;
+
+}
+/*respnsive card*/
+
+@media screen and (max-width:576px){
+  .card{
+    width: 90%;
+    margin-left: 0;
+    margin: 20px;
+    height: 500px;
+  }
+  .product a{
+    padding-bottom: 20px;
+    display: block;
+  }
+
+
+}
+
+
+/*----------------end------------------*/
+
 /* Abdullah Elshebrawy: create banner section */
 .banner {
   position: relative;
