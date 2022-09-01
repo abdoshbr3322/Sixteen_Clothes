@@ -50,7 +50,7 @@ header .navbar .nav-menu {
 }
 header .navbar .nav-menu a {
   display: inline-block;
-  padding: 22px 0;
+  padding: 22px 5px;
   font-size: 15px;
   color: #fff;
   font-weight: 500;
@@ -74,7 +74,8 @@ header .navbar .nav-menu a::after {
   transform: translateY(-100%);
   transition: 0.4s
 }
-header .navbar .nav-menu a:hover::after {
+header .navbar .nav-menu a:hover::after,
+header .navbar .nav-menu a.active::after {
   background-color: var(--main-color);
   top: 100%;
 }
