@@ -1,0 +1,13 @@
+.footer{
+    text-align: center;
+  }
+  .inner-content{
+      
+      margin-top: 60px;
+      padding: 60px 0px;
+  }
+
+  .inner-content p span{
+    font-weight: bold;
+    color: #f33f3f;
+  }
