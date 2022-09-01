@@ -29,6 +29,8 @@ a {
 .container {
   padding: 0 15px;
   margin: auto;
+  
+  
 }
 @media (min-width: 576px) {
   .container {
@@ -145,9 +147,13 @@ a {
   position: relative;
   overflow: hidden;
   margin-left: 80px;
+  transition: transform .2s; /* Animation */
+
    
    
-   
+}
+.card:hover{
+  transform: scale(1.1);
 }
 
 .cardText a{
@@ -295,6 +301,8 @@ a {
 /* Abdullah Elshebrawy: Create About section */
 .about {
   padding: 60px 0;
+  
+  
 }
 .about .primary-heading {
   margin-bottom: 60px;
@@ -364,4 +372,64 @@ a {
 }
 .about .content .info .about-us li a:hover {
   color: var(--main-color);
+}
+
+/*Abdullah Mohammed*/
+
+.final-scthion{
+ 
+  width: 100%;
+  height: auto;
+  display: flex;
+  
+  
+
+   
+}
+
+.row {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  align-items: center;
+  padding-bottom: 60px;
+   
+   
+   
+  
+  
+   
+   
+}
+
+.head-paragraph{
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  
+}
+
+.body-paragraph{
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 300;
+  color:var(--text-color);
+  line-height: 24px;
+  margin-bottom: 10px;
+
+}
+
+
+
+ 
+
+@media screen and (max-width:400px){
+  .row{
+     width: 90%;
+
+  }
+  
 }
