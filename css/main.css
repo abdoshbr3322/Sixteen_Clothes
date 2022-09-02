@@ -85,7 +85,7 @@ a {
 /*Abdalla Mohammed : products-secthion*/
 
 
-.product{
+.product-header{
   position: relative;
   text-align: left;
   margin-bottom: 60px;
@@ -98,7 +98,7 @@ a {
   
 }
 
-.product h2{
+.product-header h2{
   margin-left:100px ;
   margin-top: 120px;
   font-size: 28px;
@@ -107,13 +107,13 @@ a {
 
 }
 
-.product h2 span{
+.product-header h2 span{
   color: var(--text-color);
   font-weight: 400;
    
 }
 
-.product a {
+.product-header a {
   position: absolute;
   right: 100px;
   font-size: 13px;
@@ -125,7 +125,7 @@ a {
 
  
 
-.box{
+.products-box{
   display: grid;
   grid: gap 1rem;
   grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
@@ -138,7 +138,7 @@ a {
 }
 
 
-.card{
+.products-box .card{
   height: 350px;
   width: 300px;
   display: block;
@@ -152,11 +152,11 @@ a {
    
    
 }
-.card:hover{
+.products-box .card:hover{
   transform: scale(1.1);
 }
 
-.cardText a{
+.products-box .card .cardText a{
   font-size: 17px;
   font-weight: 400;
   color: #1a6692;
@@ -165,14 +165,14 @@ a {
 
 }
 
-.cardText h6{
+.products-box .card .cardText h6{
   font-size: 18px;
   float: right;
   font-weight: 500;
   padding-right: 25px;
 }
 
-.cardText p{
+.products-box .card .cardText p{
     padding-left: 25px;
     font-size: 14px;
     font-weight: 300;
@@ -182,7 +182,7 @@ a {
     box-sizing: border-box;
 }
 
-.stars{
+.products-box .card .stars{
   list-style: none;
   display: flex;
   padding-top: 14px;
@@ -196,7 +196,7 @@ a {
    
   
 }
-.cardText span{
+.products-box .card .cardText span{
      
     position: absolute;
     right: 10px;
@@ -207,7 +207,7 @@ a {
 }
  
 
-.cardText h4{
+.products-box .card .cardText h4{
    position: absolute;
     right: 30px;
     bottom: 30px;
@@ -218,14 +218,14 @@ a {
 }
 /*respnsive card*/
 
-@media screen and (max-width:576px){
-  .card{
+@media screen and (max-width:575px){
+  .products-box .card{
     width: 90%;
     margin-left: 0;
     margin: 20px;
     height: 500px;
   }
-  .product a{
+  .product-header a{
     padding-bottom: 20px;
     display: block;
   }

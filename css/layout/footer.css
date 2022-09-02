@@ -1,13 +1,13 @@
 .footer{
     text-align: center;
   }
-  .inner-content{
-      
+  .footer .inner-content{
+      border-top: 1px solid #eee;
       margin-top: 60px;
       padding: 60px 0px;
   }
 
-  .inner-content p span{
+  .footer .inner-content p span{
     font-weight: bold;
     color: #f33f3f;
   }
