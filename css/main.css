@@ -55,31 +55,6 @@ a {
     width: 1320px;
   }
 }
-
-/* Abdullah Mohamed */
-#btnscrolltoTop {
-  position: fixed;
-  right: 15px;
-  bottom: -100px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--main-color);
-  font-size: 18px;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 1px 2px 12px rgba(0 ,0 ,0 ,45%);
-  outline: none;
-  border: none;
-  transition: 0.3s;
-}
-#btnscrolltoTop:hover {
-  background-color: #f33f3fe9;
-  cursor: pointer;
-}
-/* Abdullah Elshebrawy */
-#btnscrolltoTop.active {
-  bottom: 15px;
-}
 /* Abdullah Elshebrawy: create banner section */
 
 .banner .content .bg-info {
@@ -112,6 +87,57 @@ a {
   .banner .content .bg-info .info .heading h2 {
     font-size: 62px;
   }
+}
+/* Abdalla Mohammed : products-secthion */
+.products {
+  padding: 80px 0;
+}
+.products .primary-heading {
+  margin-bottom: 50px;
+}
+.products .content .card {
+  border: 1px solid #eee;
+  position: relative;
+}
+.products .content .card .image {
+  overflow: hidden;
+}
+.products .content .card .image img {
+  transition: transform var(--slow-transition); /* Animation */
+  display: block;
+}
+.content .card:hover .image img {
+  transform: scale(1.1);
+}
+.content .card .cardText {
+  padding: 30px;
+}
+.content .card .card-head,
+.content .card .card-foot {
+  display: flex;
+  justify-content: space-between;
+}
+.content .card .card-head {
+  margin-bottom: 20px;
+}
+.content .card .card-head h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .card .cardText p {
+  margin-bottom: 20px;
+}
+.content .card .card-foot .stars {
+  list-style: none;
+  display: flex;
+  letter-spacing: 7px;
+  font-size: 13px;
+  color: var(--main-color);
+}
+.content .card .card-foot span.reviews {
+  font-size: 13px;
+  color: var(--main-color);
+  font-weight: 500;
 }
 /* Abdullah Elshebrawy: Create About section */
 .about {
@@ -215,4 +241,28 @@ a {
 .customers .content .customer:hover img {
   filter: brightness(1.014);
   cursor: pointer;
+}
+/* Abdullah Mohamed: scrolltoTop */
+#btnscrolltoTop {
+  position: fixed;
+  right: 15px;
+  bottom: -100px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(0 ,0 ,0 ,35%);
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#btnscrolltoTop:hover {
+  background-color: var(--black-color);
+}
+/* Abdullah Elshebrawy */
+#btnscrolltoTop.active {
+  bottom: 15px;
 }
