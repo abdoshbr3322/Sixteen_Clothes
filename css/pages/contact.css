@@ -1,0 +1,77 @@
+/* Abdullah Elshebrawy: Customize about section */
+.about .content .info {
+  width: 30%;
+  margin-left: 35px;
+}
+@media (max-width: 991px) {
+  .about .content .info {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* Abdullah Elshebrawy: create contact section */
+.contact {
+  padding: 80px 0;
+}
+ .primary-heading {
+  margin-bottom: 50px;
+}
+.contact .content {
+  display: flex;
+}
+.contact .form {
+  flex-grow: 1;
+  margin-right: 40px;
+}
+.contact .titles {
+  width: 32%;
+}
+@media (max-width: 767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+  .contact .form {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contact .titles {
+    width: 100%;
+  }
+}
+.contact .form .input-wrapper:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contact .form .input {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border: 1px solid #eee;
+}
+.contact .form .input ,.contact .form .input::placeholder {
+  font-size: 15px;
+}
+.contact .titles .title {
+  border-bottom: 1px solid #eee;
+}
+.contact .titles .title:first-child {
+  border-top: 1px solid #eee;
+}
+.contact .titles .title button {
+  display: inline-block;
+  padding: 15px 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.contact .titles .title button:hover,
+.contact .titles .title button.active {
+  color: var(--main-color);
+}
+.contact .titles .title p {
+  display: none;
+  padding-bottom: 15px;
+}

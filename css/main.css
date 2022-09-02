@@ -81,21 +81,14 @@ a {
   bottom: 15px;
 }
 /* Abdullah Elshebrawy: create banner section */
-.banner {
-  position: relative;
-}
+
 .banner .content .bg-info {
-  padding: 80px 0;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-position: center;
   background-size: cover;
-}
-@media (min-width: 768px) {
-  .banner .content .bg-info {
-    height: 600px;
-  }
 }
 .banner .content .bg-info .info {
   text-align: center;
@@ -120,28 +113,6 @@ a {
     font-size: 62px;
   }
 }
-.banner .bullets {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  z-index: 99;
-}
-.banner .bullets .owl-dot {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(256 ,556 ,556 ,24%);
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.banner .bullets .owl-dot.active {
-  background-color: #fff;
-}
-.banner .bullets .owl-dot:not(:first-child) {
-  margin-left: 8px;
-}
 /* Abdullah Elshebrawy: Create About section */
 .about {
   padding: 60px 0;
@@ -153,19 +124,28 @@ a {
   display: flex;
   align-items: flex-start;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .about .content {
     flex-direction: column;
   }
 }
-.about .content .info {
-  width: 55%;
-  margin-right: 20px;
+.about .content .image {
+  flex: 1;
 }
-@media (max-width: 767px) {
+.about .content .image img {
+  width: 100%;
+}
+.about .content .info {
+  width: 50%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .about .content .image {
+    width: 100%;
+  }
   .about .content .info {
-    margin-right: 0;
-    margin-bottom: 25px;
+    margin-left: 0;
+    margin-top: 25px;
     width: 100%;
   }
 }
@@ -174,6 +154,11 @@ a {
 }
 .about .content .info .text {
   margin-bottom: 15px;
+}
+.about .content .info .text.border {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
 .about .content .info .text,
 .about .content .info .about-us li a {
