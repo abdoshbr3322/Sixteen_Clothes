@@ -1,0 +1,26 @@
+/* Abdullah Mohammed */
+
+.purchase .container {
+  padding: 60px 15px;
+  border-top: 1px solid #eee;
+}
+.purchase .row {
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  align-items: center;
+}
+.purchase .head-paragraph {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+.purchase .body-paragraph {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 300;
+  color:var(--text-color);
+  line-height: 24px;
+  margin-bottom: 10px;
+}

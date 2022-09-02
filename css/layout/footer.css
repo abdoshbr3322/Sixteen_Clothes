@@ -1,13 +1,13 @@
-.footer{
-    text-align: center;
-  }
-  .footer .inner-content{
-      border-top: 1px solid #eee;
-      margin-top: 60px;
-      padding: 60px 0px;
-  }
-
-  .footer .inner-content p span{
-    font-weight: bold;
-    color: #f33f3f;
-  }
+footer {
+  text-align: center;
+}
+footer .container {
+  padding: 60px 15px;
+  border-top: 1px solid #eee;
+}
+footer p {
+  text-transform: uppercase;
+}
+footer p span {
+  color: #f33f3f;
+}

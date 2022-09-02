@@ -29,8 +29,6 @@ a {
 .container {
   padding: 0 15px;
   margin: auto;
-  
-  
 }
 @media (min-width: 576px) {
   .container {
@@ -57,185 +55,6 @@ a {
     width: 1320px;
   }
 }
-
-/* Abdullah Mohamed */
-#btnscrolltoTop {
-  position: fixed;
-  right: 15px;
-  bottom: -100px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--main-color);
-  font-size: 18px;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 1px 2px 12px rgba(0 ,0 ,0 ,45%);
-  outline: none;
-  border: none;
-  transition: 0.3s;
-}
-#btnscrolltoTop:hover {
-  background-color: #f33f3fe9;
-  cursor: pointer;
-}
-/* Abdullah Elshebrawy */
-#btnscrolltoTop.active {
-  bottom: 15px;
-}
-/*Abdalla Mohammed : products-secthion*/
-
-
-.product-header{
-  position: relative;
-  text-align: left;
-  margin-bottom: 60px;
-  justify-content: space-between;
-  display: flex;
-  border-bottom: 1px solid #eee;
-  
-   
-
-  
-}
-
-.product-header h2{
-  margin-left:100px ;
-  margin-top: 120px;
-  font-size: 28px;
-  margin-bottom: 10px;
-  
-
-}
-
-.product-header h2 span{
-  color: var(--text-color);
-  font-weight: 400;
-   
-}
-
-.product-header a {
-  position: absolute;
-  right: 100px;
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--main-color);
- 
-}
- 
-
- 
-
-.products-box{
-  display: grid;
-  grid: gap 1rem;
-  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-  align-items: flex-start;
-  width: 100%;
-  height: auto ;
-   
-  
-  
-}
-
-
-.products-box .card{
-  height: 350px;
-  width: 300px;
-  display: block;
-  border: 1px solid #eee;
-  margin: 15px;
-  position: relative;
-  overflow: hidden;
-  margin-left: 80px;
-  transition: transform .2s; /* Animation */
-
-   
-   
-}
-.products-box .card:hover{
-  transform: scale(1.1);
-}
-
-.products-box .card .cardText a{
-  font-size: 17px;
-  font-weight: 400;
-  color: #1a6692;
-  padding-left: 25px;
-  text-decoration: none;
-
-}
-
-.products-box .card .cardText h6{
-  font-size: 18px;
-  float: right;
-  font-weight: 500;
-  padding-right: 25px;
-}
-
-.products-box .card .cardText p{
-    padding-left: 25px;
-    font-size: 14px;
-    font-weight: 300;
-    color: #4a4a4a;
-    line-height: 24px;
-    padding-top: 20px;
-    box-sizing: border-box;
-}
-
-.products-box .card .stars{
-  list-style: none;
-  display: flex;
-  padding-top: 14px;
-  padding-left: 10px;
-  letter-spacing: 7px;
-  font-size: 13px;
-  position: absolute;
-  color: var(--main-color);
-  left: 10px;
-  bottom: 30px;
-   
-  
-}
-.products-box .card .cardText span{
-     
-    position: absolute;
-    right: 10px;
-    bottom: 30px;
-    font-size: 13px;
-    color: var(--main-color);
-    font-weight: 500;
-}
- 
-
-.products-box .card .cardText h4{
-   position: absolute;
-    right: 30px;
-    bottom: 30px;
-    font-size: 13px;
-    color: var(--main-color);
-    font-weight: 500;
-
-}
-/*respnsive card*/
-
-@media screen and (max-width:575px){
-  .products-box .card{
-    width: 90%;
-    margin-left: 0;
-    margin: 20px;
-    height: 500px;
-  }
-  .product-header a{
-    padding-bottom: 20px;
-    display: block;
-  }
-
-
-}
-
-
-/*----------------end------------------*/
-
 /* Abdullah Elshebrawy: create banner section */
 .banner {
   position: relative;
@@ -298,11 +117,63 @@ a {
 .banner .bullets .owl-dot:not(:first-child) {
   margin-left: 8px;
 }
+/* Abdalla Mohammed : products-secthion */
+.products {
+  padding: 80px 0;
+}
+.products .primary-heading {
+  margin-bottom: 50px;
+}
+.products .content .card {
+  border: 1px solid #eee;
+  position: relative;
+}
+.products .content .card .image {
+  overflow: hidden;
+}
+.products .content .card .image img {
+  transition: transform var(--slow-transition); /* Animation */
+  display: block;
+}
+.content .card:hover .image img {
+  transform: scale(1.1);
+}
+.content .card .cardText {
+  padding: 30px;
+}
+.content .card .card-head,
+.content .card .card-foot {
+  display: flex;
+  justify-content: space-between;
+}
+.content .card .card-head {
+  margin-bottom: 20px;
+}
+.content .card .card-head h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .card .cardText p {
+  margin-bottom: 20px;
+}
+.content .card .card-foot .stars {
+  list-style: none;
+  display: flex;
+  letter-spacing: 7px;
+  font-size: 13px;
+  color: var(--main-color);
+}
+.content .card .card-foot span.reviews {
+  font-size: 13px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+/*----------------end------------------*/
+
 /* Abdullah Elshebrawy: Create About section */
 .about {
   padding: 60px 0;
-  
-  
 }
 .about .primary-heading {
   margin-bottom: 60px;
@@ -374,62 +245,27 @@ a {
   color: var(--main-color);
 }
 
-/*Abdullah Mohammed*/
-
-.final-scthion{
- 
-  width: 100%;
-  height: auto;
-  display: flex;
-  
-  
-
-   
+/* Abdullah Mohamed: scrolltoTop */
+#btnscrolltoTop {
+  position: fixed;
+  right: 15px;
+  bottom: -100px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color);
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(0 ,0 ,0 ,35%);
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
-.row {
-  margin-top: 60px;
-  padding: 30px;
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  margin-bottom: 50px;
-  align-items: center;
-  padding-bottom: 60px;
-   
-   
-   
-  
-  
-   
-   
+#btnscrolltoTop:hover {
+  background-color: var(--black-color);
 }
-
-.head-paragraph{
-  font-size: 17px;
-  font-weight: 400;
-  color: var(--secondary-color);
-  margin-bottom: 10px;
-  
-}
-
-.body-paragraph{
-  margin-bottom: 0px;
-  font-size: 14px;
-  font-weight: 300;
-  color:var(--text-color);
-  line-height: 24px;
-  margin-bottom: 10px;
-
-}
-
-
-
- 
-
-@media screen and (max-width:400px){
-  .row{
-     width: 90%;
-
-  }
-  
+/* Abdullah Elshebrawy */
+#btnscrolltoTop.active {
+  bottom: 15px;
 }
