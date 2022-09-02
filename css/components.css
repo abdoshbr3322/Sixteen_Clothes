@@ -84,3 +84,15 @@ ul.social-links a:hover {
     grid-template-columns: repeat(3 ,1fr)
   }
 }
+/* Abdullah Elshebrawy: create card title and main text */
+.card-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.main-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.8;
+}
