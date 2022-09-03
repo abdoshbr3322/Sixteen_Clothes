@@ -1,0 +1,14 @@
+.products .card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .products .card {
+    width: calc(50% - 15px);
+  }
+}
+@media (min-width: 992px) {
+  .products .card {
+    width: calc(33.3333% - 20px);
+  }
+}

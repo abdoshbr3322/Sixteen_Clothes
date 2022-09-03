@@ -3,6 +3,9 @@
 .banner {
   position: relative;
 }
+.banner .content .bg-info {
+  height: 400px;
+}
 @media (min-width: 768px) {
   .banner .content .bg-info {
     height: 600px;
@@ -41,6 +44,7 @@
     margin-bottom: 25px;
     width: 100%;
   }
+}
 /* Abdullah Mohammed */
 
 .purchase .container {

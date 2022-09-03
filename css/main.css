@@ -26,6 +26,9 @@ ul{
 a {
   text-decoration: none;
 }
+textarea {
+  resize: vertical;
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -97,7 +100,6 @@ a {
 }
 .products .content .card {
   border: 1px solid #eee;
-  position: relative;
 }
 .products .content .card .image {
   overflow: hidden;

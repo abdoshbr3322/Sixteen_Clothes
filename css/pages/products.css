@@ -1,0 +1,21 @@
+.products .filters {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 60px;
+}
+.products .filters button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--black-color);
+  text-transform: capitalize;
+  padding: 12px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.products .filters button:hover, .products .filters button.active {
+  color: var(--main-color);
+}

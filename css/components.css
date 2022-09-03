@@ -20,13 +20,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 12px;
+  flex-wrap: wrap;
   border-bottom: 1px solid #eee;
 }
 .primary-heading h2 {
   font-size: 28px;
   font-weight: 500;
   color: #1e1e1e;
+}
+.primary-heading h2, .primary-heading a {
+  margin-bottom: 12px;
 }
 .primary-heading a {
   font-size: 13px;

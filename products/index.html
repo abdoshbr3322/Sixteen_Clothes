@@ -3,22 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/layout/header.css">
-    <link rel="stylesheet" href="./css/layout/footer.css">
-    <link rel="stylesheet" href="./css/pages/home.css">
-    <title>Sixteen Clothes</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages/products.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout/header.css">
+    <link rel="stylesheet" href="../css/layout/footer.css">
+    <title>Products | Sixteen Clothes</title>
   </head>
   <body>
     <!-- Abdullah Elshebrawy: Header section -->
@@ -33,16 +27,16 @@
           </div>
           <ul class="nav-menu" id="nav-menu">
             <li class="nav-item">
-              <a href="./" class="active">Home</a>
+              <a href="../">Home</a>
             </li>
             <li class="nav-item">
-              <a href="./products">Our Products</a>
+              <a href="./" class="active">Our Products</a>
             </li>
             <li class="nav-item">
-              <a href="./about">About Us</a>
+              <a href="../about">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="./contact">Contact Us</a>
+              <a href="../contact">Contact Us</a>
             </li>
           </ul>
 
@@ -51,47 +45,30 @@
     </header>
     <!-- Abdullah Elshebrawy: Banner section -->
     <div class="banner">
-      <div class="owl-carousel content">
-        <div class="bg-info" style="background-image: url(./imgs/slide_01.jpg);">
+      <div class="content">
+        <div class="bg-info" style="background-image: url(../imgs/products-heading.jpg);">
           <div class="info">
             <div class="heading">
-              <h4>Best Offers</h4>
-              <h2>New Arrivals On Sale</h2>
+              <h4>NEW ARRIVALS</h4>
+              <h2>SIXTEEN PRODUCTS</h2>
             </div>
           </div>
         </div>
-        <div class="bg-info" style="background-image: url(./imgs/slide_02.jpg);">
-          <div class="info">
-            <div class="heading">
-              <h4>Flash Deals</h4>
-              <h2>Get Your Best Products</h2>
-            </div>
-          </div>
-        </div>
-        <div class="bg-info" style="background-image: url(./imgs/slide_03.jpg);">
-          <div class="info">
-            <div class="heading">
-              <h4>Last Minute</h4>
-              <h2>Grab Last Minute Deals</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bullets">
-
       </div>
     </div>
 
     <!--Abdullah Mohammed: Products secthion-->
     <div class="products">
       <div class="container">
-        <div class="primary-heading">
-          <h2>Latest Products</h2>
-          <a class="link" href="./products">view all products <i class="fa fa-angle-right"></i></a>
+        <div class="filters">
+          <button data-filter="*" class="active">All Products</button>
+          <button data-filter=".featured">Featured</button>
+          <button data-filter=".flash-deals">Flash Deals</button>
+          <button data-filter=".last-minute">Last Minute</button>
         </div>
         <div class="content grid-3">
-          <div class="card">
-            <div class="image"><img src="./imgs/product_01.jpg" alt="Avatar" style="width:100%"></div>
+          <div class="card featured">
+            <div class="image"><img src="../imgs/product_01.jpg" alt="Avatar" style="width:100%"></div>
             <div class="cardText">
               <div class="card-head">
                 <h4 class="card-title">Title goes here</h4>
@@ -115,8 +92,8 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image"><img src="./imgs/product_02.jpg" alt="Avatar" style="width:100%"></div>
+          <div class="card flash-deals">
+            <div class="image"><img src="../imgs/product_02.jpg" alt="Avatar" style="width:100%"></div>
             <div class="cardText">
               <div class="card-head">
                 <h4 class="card-title">Title goes here</h4>
@@ -140,8 +117,8 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image"><img src="./imgs/product_03.jpg" alt="Avatar" style="width:100%"></div>
+          <div class="card last-minute">
+            <div class="image"><img src="../imgs/product_03.jpg" alt="Avatar" style="width:100%"></div>
             <div class="cardText">
               <div class="card-head">
                 <h4 class="card-title">Title goes here</h4>
@@ -165,8 +142,8 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image"><img src="./imgs/product_04.jpg" alt="Avatar" style="width:100%"></div>
+          <div class="card last-minute">
+            <div class="image"><img src="../imgs/product_04.jpg" alt="Avatar" style="width:100%"></div>
             <div class="cardText">
               <div class="card-head">
                 <h4 class="card-title">Title goes here</h4>
@@ -190,8 +167,8 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image"><img src="./imgs/product_05.jpg" alt="Avatar" style="width:100%"></div>
+          <div class="card flash-deals">
+            <div class="image"><img src="../imgs/product_05.jpg" alt="Avatar" style="width:100%"></div>
             <div class="cardText">
               <div class="card-head">
                 <h4 class="card-title">Title goes here</h4>
@@ -215,8 +192,8 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="image"><img src="./imgs/product_06.jpg" alt="Avatar" style="width:100%"></div>
+          <div class="card featured">
+            <div class="image"><img src="../imgs/product_06.jpg" alt="Avatar" style="width:100%"></div>
             <div class="cardText">
               <div class="card-head">
                 <h4 class="card-title">Title goes here</h4>
@@ -244,58 +221,6 @@
       </div>
     </div>
 
-    <!-- Abdullah Elshebrawy: About section -->
-    <div class="about">
-      <div class="container">
-        <div class="primary-heading">
-          <h2>About Sixteen Clothing</h2>
-        </div>
-        <div class="content">
-          <div class="info">
-            <h4 class="title">Looking for the best products?</h4>
-            <p class="text main-text">
-              <a href="#">This template</a> is free to use for your business websites.
-              However, you have no permission to redistribute the downloadable ZIP file on any template collection website.
-              <a href="#">Contact us</a> for more info.
-            </p>
-            <ul class="about-us">
-              <li class="item"><a href="#" class="main-text">Lorem ipsum dolor sit amet</a></li>
-              <li class="item"><a href="#" class="main-text">Consectetur an adipisicing elit</a></li>
-              <li class="item"><a href="#" class="main-text">It aquecorporis nulla aspernatur</a></li>
-              <li class="item"><a href="#" class="main-text">Corporis, omnis doloremque</a></li>
-              <li class="item"><a href="#" class="main-text">Non cum id reprehenderit</a></li>
-            </ul>
-            <a href="#" class="main-btn">Read More</a>
-          </div>
-          <div class="image">
-            <img src="./imgs/feature-image.jpg" alt="Feature">
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!--Abdullah mohammed: final secthion-->
-    <div class="purchase">
-      <div class="container">
-        <div class="row">
-          <center>
-            <div class="head-paragraph">
-              <p>Creative & Unique <b>Sixteen</b> Products<p>
-            </div>
-            <div class="body-paragraph">
-              <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-                Itaque corporis amet elite author nulla.
-              </p>
-            </div>
-            <a href="#" class="main-btn">Purchase Now</a>
-          </center>
-        </div>
-      </div>
-    </div>
-
     <!-- Abdullah Mohamed: Footer section -->
     <footer class="footer">
       <div class="container">
@@ -305,9 +230,6 @@
         </p>
       </div>
     </footer>
-
-    <!--Abdalla mohammed : scroll to top-->
-
     <div class="scrolltoTop">
       <button id="btnscrolltoTop">
         <i class="fas fa-arrow-up-long"></i>
@@ -316,18 +238,15 @@
 
 
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer">
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
     </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-    <script src="./js/main.js" charset="utf-8"></script>
-    <script src="./js/carousal.js" charset="utf-8"></script>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/products.js" charset="utf-8"></script>
+    <script src="../js/main.js" charset="utf-8"></script>
+    <!-- Finished header -->
   </body>
 </html>
