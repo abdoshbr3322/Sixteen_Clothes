@@ -71,19 +71,23 @@ ul.social-links a:hover {
   color: #fff;
 }
 /* Abdullah Elshebrawy: create grid component */
-.grid-3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
+.flex-3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.flex-3 > * {
+  width: 100%;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .grid-3 {
-    grid-template-columns: repeat(2 ,1fr)
+  .flex-3 > * {
+    width: calc(50% - 15px);
   }
 }
 @media (min-width: 992px) {
-  .grid-3 {
-    grid-template-columns: repeat(3 ,1fr)
+  .flex-3 > * {
+    width: calc(33.3333% - 20px);
   }
 }
 /* Abdullah Elshebrawy: create card title and main text */
